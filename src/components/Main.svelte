@@ -1,7 +1,10 @@
-
 <script>
-    let holas = new Array(100).fill(0);
+    import Carrousel from "./Carrousel.svelte";
 </script>
-{#each holas as hola}
-    <div>hola</div>
-{/each}
+
+<main>
+    <section>
+        <Carrousel/>
+    </section>
+</main>
+

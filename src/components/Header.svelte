@@ -8,18 +8,17 @@
     ]
 
     let menu = false;
-    $:console.log(menu)
 </script>
 
 <header class={'sticky z-[10] top-0 duration-200 px-6 flex flex-col sm:flex-row justify-between' + (
-  y > 0 ? ' delay-100 bg-amber-900 bg-opacity-80 py-1 shadow-xl' : ' delay-100 py-6 bg-amber-900 bg-opacity-20'
+  y > 0 ? ' delay-100 bg-amber-900 bg-opacity-90 py-1 shadow-xl' : ' delay-100 py-6 bg-amber-900 bg-opacity-50'
 )}>
     <div class="flex items-center justify-between gap-2">
         <a href="/">
             <img src="/favicon.png" alt="Logo" width="80px" class="cursor-pointer" />
         </a>
         <h1 class="font-medium opacity-80">
-            Residencia Estudiantil DiqueUNO
+            Residencia Estudiantil <b>DiqueUNO</b>
         </h1>
         <div class="sm:hidden flex items-center gap-4">
             <button on:click={() => { menu = !menu }} class="ml-auto rounded-sm bg-amber-900 px-3 hover:bg-slate-800 cursor-pointer">
@@ -35,7 +34,7 @@
         {/each}
         <a href="#contacto">
         <button
-            class="blueShadow relative overflow-hidden mx-2 px-2 py-2 group rounded-md bg-amber-100 bg-opacity-50 text-slate-950"
+            class="blueShadow relative overflow-hidden mx-2 px-2 py-2 group rounded-sm bg-amber-100 bg-opacity-50 text-slate-950"
         >
             <div
                 class="absolute top-0 right-full w-full h-full bg-amber-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
