@@ -8,7 +8,7 @@
     ]
 </script>
 
-<header class={'sticky z-[10] top-0 duration-200 px-6 flex items-center justify-between border'+ (
+<header class={'sticky z-[10] top-0 duration-200 px-6 py-2 flex items-center justify-between border'+ (
     y > 0 ? 'py-4 bg-amber-900 shadow-xl' : 'py-6 bg-transparent'
 )}>
     <div class="flex items-center justify-between gap-2">
@@ -25,5 +25,17 @@
                 <p>{tab.name}</p>
             </a>
         {/each}
-    </div>
+    
+        <a href="#contacto">
+            <button
+                class="blueShadow relative overflow-hidden mx-2 px-2 py-2 group rounded-md bg-amber-100 bg-opacity-50 text-slate-950"
+                >
+                <div
+                    class="absolute top-0 right-full w-full h-full bg-amber-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
+                />
+                    <h4 class="relative z-9">Contactanos</h4>
+                    
+            </button>
+        </a>
+</div>
 </header>
