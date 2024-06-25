@@ -8,11 +8,13 @@
     ]
 </script>
 
-<header class={'sticky z-[10] top-0 duration-200 px-6 flex items-center justify-between border border-solid'+ (
-    y > 0 ? 'py-4 bg-slate-950 border-green-950' : 'py-6 bg-transparent border-transparent'
+<header class={'sticky z-[10] top-0 duration-200 px-6 flex items-center justify-between border'+ (
+    y > 0 ? 'py-4 bg-amber-900 shadow-xl' : 'py-6 bg-transparent'
 )}>
     <div class="flex items-center justify-between gap-2">
-        <img src="/favicon.png" alt="Logo" width="80px"class=""/>
+        <a href="/">
+            <img src="/favicon.png" alt="Logo" width="80px" class="cursor-pointer" />
+        </a>
         <h1 class="font-medium opacity-50">
             Residencia Estudiantil DiqueUNO
         </h1>
