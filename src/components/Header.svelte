@@ -1,5 +1,5 @@
 <script>
-
+    import { slide } from 'svelte/transition';
     export let y;
     
     let tabs = [
@@ -22,7 +22,7 @@
             Residencia Estudiantil DiqueUNO
         </h1>
         <div class="sm:hidden flex items-center gap-4">
-            <button on:click={() => { menu = !menu }} class={"ml-auto rounded-sm bg-amber-900 px-3 hover:bg-slate-800 cursor-pointer" + (y > 0 ? "" : "")}>
+            <button on:click={() => { menu = !menu }} class="ml-auto rounded-sm bg-amber-900 px-3 hover:bg-slate-800 cursor-pointer">
                 <i class={"fa-solid grid place-items-center aspect-square my-3 mx-3 " + (menu? "fa-caret-up" : "fa-caret-down" )}></i>
             </button>
         </div>
@@ -45,7 +45,7 @@
         </a>
     </div>
   {#if menu}
-    <div class="sm:hidden flex flex-col items-start w-full mt-4">
+    <div class="sm:hidden flex flex-col items-start w-full mt-4 " transition:slide>
         {#each tabs as tab, index}
         <div class="w-full">
             <a href={tab.link} class=" py-2 px-4 duration-200 hover:opacity-40">
