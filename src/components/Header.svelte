@@ -8,8 +8,8 @@
     ]
 </script>
 
-<header class={'sticky z-[10] top-0 duration-200 px-6 py-2 flex items-center justify-between border'+ (
-    y > 0 ? 'py-4 bg-amber-900 shadow-xl' : 'py-6 bg-transparent'
+<header class={'sticky z-[10] top-0 duration-200 px-6 flex items-center justify-between border'+ (
+    y > 0 ? 'py-4 bg-amber-900 shadow-xl py-2' : 'bg-transparent py-6'
 )}>
     <div class="flex items-center justify-between gap-2">
         <a href="/">
