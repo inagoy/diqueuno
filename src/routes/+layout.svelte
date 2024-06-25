@@ -16,7 +16,7 @@
             y > 0 ? 'opacity-full pointer-events-auto' : 'pointer-events-none opacity-0'
         )
     }>
-        <button on:click={goTop} class="ml-auto rounded-full bg-amber-900 px-3 hover:bg-slate-800 cursor-pointer shadow-lg">
+        <button on:click={goTop} class="ml-auto rounded-sm bg-amber-900 px-3 hover:bg-slate-800 cursor-pointer shadow-lg">
             <i class="fa-solid fa-arrow-up grid place-items-center aspect-square my-3 mx-3"/>
         </button>
     </div>
