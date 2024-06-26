@@ -8,19 +8,19 @@
     ]
 
     let menu = false;
-    $:console.log(menu)
 </script>
 
 
-<header class={'sticky z-[10] top-0 transition-all duration-1000 px-6 py-3 flex flex-col sm:flex-row justify-between ' + (
-  y > 0 ? 'bg-orange-900 bg-opacity-90' : 'bg-gradient-to-l from-orange-700 to-amber-800'
-)}>
+<header class={'sticky z-[10] top-0 transition-all duration-1000 px-6 flex flex-col sm:flex-row justify-between ' + (
+        y > 0 ? 'bg-orange-900 bg-opacity-90 py-1 ' : 'py-7 bg-gradient-to-l from-orange-700 to-amber-800 '
+    ) + (menu? '': 'shadow-xl')
+}>
     <div class="flex items-center justify-between gap-2">
         <a href="/">
             <img src="/favicon.png" alt="Logo" width="80px" class="cursor-pointer" />
         </a>
         <h1 class="font-medium opacity-80">
-            Residencia Estudiantil DiqueUNO
+            Residencia Estudiantil <b>DiqueUNO</b>
         </h1>
         <div class="sm:hidden flex items-center gap-4">
             <button on:click={() => { menu = !menu }} class="ml-auto rounded-sm bg-amber-900 px-3 hover:bg-slate-800 cursor-pointer">
