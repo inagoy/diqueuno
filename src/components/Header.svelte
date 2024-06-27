@@ -5,6 +5,8 @@
     let tabs = [
        {name: 'Habitaciones', link: '#habitaciones'},
        {name: 'Servicios', link: '#servicios'},
+       {name: 'Fotos', link: '#fotos'},
+       {name: 'Dónde estamos', link:'#donde-estamos'}
     ]
 
     let menu = false;
@@ -19,16 +21,16 @@
         <a href="/">
             <img src="/favicon.png" alt="Logo" width="80px" class="cursor-pointer" />
         </a>
-        <h1 class="select-none font-medium opacity-80">
+        <h1 class="select-none font-medium opacity-80 hidden sm:block md:hidden lg:block text-left">
             Residencia Estudiantil <b>DiqueUNO</b>
         </h1>
-        <div class="absolute sm:hidden right-4 items-center gap-4">
+        <div class="absolute md:hidden right-4 items-center gap-4">
             <button on:click={() => { menu = !menu }} class="ml-auto rounded-sm bg-amber-900 px-3 hover:bg-slate-800 cursor-pointer">
                 <i class={"fa-solid grid place-items-center aspect-square my-3 mx-3 " + (menu ? "fa-caret-up" : "fa-caret-down" )}></i>
             </button>
         </div>
     </div>
-    <div class="sm:flex items-center gap-4 hidden">
+    <div class="md:flex items-center gap-4 hidden">
         {#each tabs as tab, index}
         <a href={tab.link} class="duration-200 hover:opacity-40">
             <p>{tab.name}</p>
@@ -47,7 +49,7 @@
     </div>
     {#if menu}
     <div 
-        class={"sm:hidden absolute transition-all duration-700 top-full left-0 w-full z-[9] shadow-xl "  + (
+        class={"md:hidden absolute transition-all duration-700 top-full left-0 w-full z-[9] shadow-xl "  + (
             y > 0 ? ' bg-orange-800 bg-opacity-60 ' : ' bg-orange-800 bg-opacity-95 '
           )}
         transition:slide>
@@ -61,7 +63,7 @@
             </div>
             {/each}
             <div class="w-full">
-                <a href="#contacto" class="px-4 duration-200 hover:opacity-40">
+                <a href="#contacto" class="px-4 duration-200 hover:opacity-40 text-amber-400">
                     <p>Contactanos</p>
                 </a>
             </div>
