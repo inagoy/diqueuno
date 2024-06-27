@@ -1,6 +1,6 @@
 <script>
-    let cant = Array(100).fill(0);
+
 </script>
-{#each cant as can}
-    <div>hola</div>
-{/each}
+<div class="h-full bg-red-600">
+    <img src="/fachada.jpg" alt="Fachada" class="h-full w-full object-cover"/>
+</div>

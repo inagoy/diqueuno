@@ -1,10 +1,10 @@
 <script>
-
+  import Carrousel from "../components/Carrousel.svelte";
 </script>
 
 <main class="flex flex-col ">
-    <section class="border border-red-400 flex-grow h-screen pt-[8rem]">
-      inner section taking remaining height
+    <section class="flex-col flex-grow h-screen ">
+      <Carrousel/>
     </section>
     <section class="border border-green-400 h-[200px]">
       hola

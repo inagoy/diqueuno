@@ -11,8 +11,8 @@
 </script>
 
 
-<header class={'fixed w-full z-[10] top-0 transition-all py-6 duration-1000 px-6 flex flex-row justify-between ' + (
-        y > 0 ? 'bg-orange-900 bg-opacity-90 h-[5rem] ' : ' bg-gradient-to-l from-orange-700 to-amber-800 h-[8rem] '
+<header class={'fixed w-full z-[10] top-0 transition-all py-6 duration-700 px-6 flex flex-row justify-between ' + (
+        y > 0 ? 'bg-orange-800 bg-opacity-60 h-[5rem] ' : ' bg-orange-800 bg-opacity-95 h-[8rem] '
     ) + (menu? '': 'shadow-xl')
 }>
     <div class="flex items-center justify-between gap-2">
@@ -47,8 +47,8 @@
     </div>
     {#if menu}
     <div 
-        class={"sm:hidden absolute transition-all duration-1000 top-full left-0 w-full z-[9] shadow-xl "  + (
-            y > 0 ? 'bg-orange-900 bg-opacity-90' : 'bg-gradient-to-l from-orange-700 to-amber-800'
+        class={"sm:hidden absolute transition-all duration-700 top-full left-0 w-full z-[9] shadow-xl "  + (
+            y > 0 ? ' bg-orange-800 bg-opacity-60 ' : ' bg-orange-800 bg-opacity-95 '
           )}
         transition:slide>
         <div class="flex flex-col items-start w-full px-10">
