@@ -19,7 +19,7 @@
         <a href="/">
             <img src="/favicon.png" alt="Logo" width="80px" class="cursor-pointer" />
         </a>
-        <h1 class="font-medium opacity-80">
+        <h1 class="select-none font-medium opacity-80">
             Residencia Estudiantil <b>DiqueUNO</b>
         </h1>
         <div class="absolute sm:hidden right-4 items-center gap-4">
