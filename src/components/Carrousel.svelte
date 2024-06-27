@@ -2,19 +2,24 @@
     import { Carousel, Indicator } from 'flowbite-svelte';
     export const images = [
       {
-        alt: 'Cosmic timetraveler',
-        src: '/living2.jpg',
-        title: 'cosmic-timetraveler-pYyOZ8q7AII-unsplash.com',
+        alt: 'Living',
+        src: '/images/living.jpg',
       },
       {
-        alt: 'Cristina Gottardi',
-        src: '/living1.jpg',
-        title: 'cristina-gottardi-CSpjU6hYo_0-unsplash.com',
+        alt: 'Fachada',
+        src: '/images/fachada.jpg',
       },
       {
-        alt: 'Johannes Plenio',
-        src: '/fachada.jpg',
-        title: 'johannes-plenio-RwHv7LgeC7s-unsplash.com',
+        alt: 'Comedor',
+        src: '/images/comedor.jpg',
+      },
+      {
+        alt: 'Barra',
+        src: '/images/barra.jpg'
+      },
+      {
+        alt: 'Cocina',
+        src: '/images/cocina.jpg'
       },
     ];
   </script>
