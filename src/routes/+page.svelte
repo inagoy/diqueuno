@@ -2,7 +2,7 @@
 
 </script>
 
-<main class="flex flex-col flex-grow">
+<main class="flex flex-col flex-grow h-screen">
     <section class="bg-red-400 flex-grow">
       inner section taking remaining height
     </section>
@@ -10,3 +10,4 @@
       hola
     </section>
 </main>
+<section class="h-[400px]"></section>
