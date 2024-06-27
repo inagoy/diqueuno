@@ -11,8 +11,8 @@
 </script>
 
 
-<header class={'sticky z-[10] top-0 transition-all duration-1000 px-6 flex flex-col sm:flex-row justify-between ' + (
-        y > 0 ? 'bg-orange-900 bg-opacity-90 py-1 ' : 'py-7 bg-gradient-to-l from-orange-700 to-amber-800 '
+<header class={'fixed w-full z-[10] top-0 transition-all py-6 duration-1000 px-6 flex flex-row justify-between ' + (
+        y > 0 ? 'bg-orange-900 bg-opacity-90 h-[5rem] ' : ' bg-gradient-to-l from-orange-700 to-amber-800 h-[8rem] '
     ) + (menu? '': 'shadow-xl')
 }>
     <div class="flex items-center justify-between gap-2">
@@ -22,7 +22,7 @@
         <h1 class="font-medium opacity-80">
             Residencia Estudiantil <b>DiqueUNO</b>
         </h1>
-        <div class="sm:hidden flex items-center gap-4">
+        <div class="absolute sm:hidden right-4 items-center gap-4">
             <button on:click={() => { menu = !menu }} class="ml-auto rounded-sm bg-amber-900 px-3 hover:bg-slate-800 cursor-pointer">
                 <i class={"fa-solid grid place-items-center aspect-square my-3 mx-3 " + (menu ? "fa-caret-up" : "fa-caret-down" )}></i>
             </button>
@@ -51,17 +51,17 @@
             y > 0 ? 'bg-orange-900 bg-opacity-90' : 'bg-gradient-to-l from-orange-700 to-amber-800'
           )}
         transition:slide>
-        <div class="flex flex-col items-start w-full mt-2 px-10">
+        <div class="flex flex-col items-start w-full px-10">
             {#each tabs as tab, index}
             <div class="w-full">
-                <a href={tab.link} class="py-2 px-4 duration-200 hover:opacity-40">
+                <a href={tab.link} class="px-4 duration-200 hover:opacity-40">
                     <p>{tab.name}</p>
                 </a>
                 <hr class="opacity-40"/>
             </div>
             {/each}
             <div class="w-full">
-                <a href="#contacto" class="py-2 px-4 duration-200 hover:opacity-40">
+                <a href="#contacto" class="px-4 duration-200 hover:opacity-40">
                     <p>Contactanos</p>
                 </a>
             </div>

@@ -20,7 +20,7 @@
             <i class="fa-solid fa-arrow-up grid place-items-center aspect-square my-3 mx-3"/>
         </button>
     </div>
-<!--     <Header y={y}/> -->
+    <Header y={y}/>
     <slot/>
     <Footer/>
 </div>
