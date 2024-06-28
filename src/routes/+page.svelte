@@ -16,18 +16,23 @@
       </div>
       <Carrousel />
     </section>
-    <section id="donde-estamos" class="h-screen flex flex-col">
-      <Divider name="Dónde Estamos" id="#donde-estamos"/>
-      <div class="flex flex-grow md:flex-row flex-col"> 
-        <div class="md:w-1/2 h-full">
-          <div class="h-full ">
-              
+    <section id="donde-estamos" class="h-screen flex flex-col bg-gray-800 bg-opacity-60">
+      <Divider name="Dónde estamos" id="#donde-estamos" />
+      <div class="flex flex-grow flex-col md:flex-row px-5 md:px-10">
+        <div class="md:w-1/3 md:h-full h-1/3">
+          <div class="h-full flex items-center justify-center">
+            <p class="text-left md:text-right text-white sm:text-lg text-base px-5 lg:pr-10 leading-loose">
+              <span class=" text-orange-600 font-semibold">DiqueUNO</span> está ubicada en Ensenada. 
+              <br/>A 300 metros de las facultades de Humanidades y Psicología de la Universidad Nacional de La Plata.
+              <br/>A su vez se encuentra a 15 minutos a pie del centro de la ciudad de La Plata.
+            </p>
           </div>
         </div>
-        <div class="md:w-1/2 h-full shadow-lg ">
+        <div class="md:w-2/3 md:h-full h-2/3 shadow-lg">
           <iframe 
-            src="https://www.google.com/maps/d/embed?mid=1qOKLeB2P5WkwqndK6VP-THtX1bFLJ1M&ehbc=2E312F" 
-            class=" w-full h-full ">
+            title="Google Maps"
+            src="https://www.google.com/maps/d/embed?mid=1qOKLeB2P5WkwqndK6VP-THtX1bFLJ1M&ehbc=2E312F"
+            class="w-full h-full">
           </iframe>
         </div>
       </div>
