@@ -1,12 +1,20 @@
 <script>
   import Carrousel from "../components/Carrousel.svelte";
-  import Divider from "../components/Divider.svelte"
+  import Divider from "../components/Divider.svelte";
+  import { Gallery } from 'flowbite-svelte';
+
+  const images = [
+    { alt: 'Habitación 1', src: '/images/habitaciones/1.jpg' },
+    { alt: 'Pasillo', src: '/images/habitaciones/3.jpg' },
+    { alt: 'Habitación 2', src: '/images/habitaciones/2.jpg' },
+    { alt: 'Habitación 3', src: '/images/habitaciones/4.jpg' },
+  ];
 </script>
 
 <main class="flex flex-col ">
     <section  id="introPage" class="relative flex-grow h-screen items-center justify-center">
       <div class="select-none absolute inset-0 flex items-center justify-center">
-        <div class="text-center  text-3xl sm:text-4xl md:text-5xl  z-[2] " style="text-shadow: 2px 2px 10px black">
+        <div class="text-center  text-3xl sm:text-4xl lg:text-5xl  z-[2] " style="text-shadow: 2px 2px 10px black">
           <!-- <h1 class="font-semibold">Bienvenidos a <span class=" text-orange-600">DiqueUNO</span></h1> -->
           <p>
             <br />Una Residencia exclusiva para <br />
@@ -18,17 +26,17 @@
     </section>
     <section id="donde-estamos" class="h-screen flex flex-col bg-gray-800 bg-opacity-60">
       <Divider name="Dónde estamos" id="#donde-estamos" />
-      <div class="flex flex-grow flex-col md:flex-row px-5 md:px-10">
-        <div class="md:w-1/3 md:h-full h-1/3">
+      <div class="flex flex-grow flex-col lg:flex-row px-5 lg:px-10">
+        <div class="lg:w-1/3 lg:h-full h-1/3">
           <div class="h-full flex items-center justify-center">
-            <p class="text-left md:text-right text-white sm:text-lg text-base px-5 lg:pr-10 leading-loose">
+            <p class="text-left lg:text-right text-white  text-sm sm:text-lg px-5 lg:pr-10 sm:leading-loose">
               <span class=" text-orange-600 font-semibold">DiqueUNO</span> está ubicada en Ensenada. 
               <br/>A 300 metros de las facultades de Humanidades y Psicología de la Universidad Nacional de La Plata.
               <br/>A su vez se encuentra a 15 minutos a pie del centro de la ciudad de La Plata.
             </p>
           </div>
         </div>
-        <div class="md:w-2/3 md:h-full h-2/3 shadow-lg">
+        <div class="lg:w-2/3 lg:h-full h-2/3 shadow-lg">
           <iframe 
             title="Google Maps"
             src="https://www.google.com/maps/d/embed?mid=1qOKLeB2P5WkwqndK6VP-THtX1bFLJ1M&ehbc=2E312F"
@@ -39,10 +47,27 @@
     </section>
     <section id="habitaciones" class="h-screen flex flex-col bg-gray-800 bg-opacity-60">
       <Divider name="Habitaciones" id="#habitaciones" />
-      <div class="flex flex-grow flex-col md:flex-row px-5 md:px-10">
+      <div class="flex flex-grow lg:flex-col px-5 lg:px-10 items-center">
+        <div class="h-1/2 md:h-2/3 py-10">
+          <Gallery class="h-full gap-2 flex justify-center grid-col-2" items={images} imgClass="h-full rounded-none rounded-sm object-cover" />
+        </div>
+        <div class="h-1/2 md:h-1/3 md:px-20">
+          <p class="text-center text-white text-sm sm:text-lg px-5 lg:pr-10 sm:leading-loose">
+            Contamos únicamente con habitaciones individuales. Todas poseen ventilación a expacios exteriores y calefacción eléctrica.
+            <br/> Están equipadas con cama, placard y mesa de estudio invididual. 
+          <p/>
+          <ul class="list-image-none">
+            <li>Ventilación a expacios exteriores</li>
+            <li>Calefacción eléctrica</li>
+            <li>Ventilación a expacios exteriores</li>
+            <li>Cama</li>
+            <li>Placard</li>
+            <li>Mesa de estudio invididual</li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section class="border border-yellow-400 h-[200px]">
+    <section class="border border-yellow-400 h-[200px]" >
       hola
     </section>
 </main>
