@@ -25,7 +25,7 @@
   </script>
   
   <div class="h-full place-content-center">
-    <Carousel {images} duration="5000" imgClass="h-full object-cover" class="min-h-screen rounded-none" let:Indicators>
+    <Carousel {images} duration="5000" imgClass="h-full object-cover" class="min-h-screen rounded-none z-[-1]" let:Indicators>
         <Indicators class="z-[1]"/>
     </Carousel>
   </div>

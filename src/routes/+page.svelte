@@ -17,8 +17,20 @@
       <Carrousel />
     </section>
     <section id="donde-estamos" class="h-screen flex flex-col">
-      <Divider name="Dónde Estamos"/>
-      <div class="flex-grow bg-red-400"> hola</div>
+      <Divider name="Dónde Estamos" id="#donde-estamos"/>
+      <div class="flex flex-grow md:flex-row flex-col"> 
+        <div class="md:w-1/2 h-full">
+          <div class="h-full ">
+              
+          </div>
+        </div>
+        <div class="md:w-1/2 h-full shadow-lg ">
+          <iframe 
+            src="https://www.google.com/maps/d/embed?mid=1qOKLeB2P5WkwqndK6VP-THtX1bFLJ1M&ehbc=2E312F" 
+            class=" w-full h-full ">
+          </iframe>
+        </div>
+      </div>
     </section>
     <section class="border border-blue-400 h-[200px]">
       hola
