@@ -37,8 +37,10 @@
         </div>
       </div>
     </section>
-    <section class="border border-blue-400 h-[200px]">
-      hola
+    <section id="habitaciones" class="h-screen flex flex-col bg-gray-800 bg-opacity-60">
+      <Divider name="Habitaciones" id="#habitaciones" />
+      <div class="flex flex-grow flex-col md:flex-row px-5 md:px-10">
+      </div>
     </section>
     <section class="border border-yellow-400 h-[200px]">
       hola
