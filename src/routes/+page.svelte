@@ -1,5 +1,6 @@
 <script>
   import Carrousel from "../components/Carrousel.svelte";
+  import Divider from "../components/Divider.svelte"
 </script>
 
 <main class="flex flex-col ">
@@ -9,14 +10,15 @@
           <!-- <h1 class="font-semibold">Bienvenidos a <span class=" text-orange-600">DiqueUNO</span></h1> -->
           <p>
             <br />Una Residencia exclusiva para <br />
-            <span class="text-orange-400">Estudiantes Universitarios</span>
+            <span class="text-orange-400 ">Estudiantes Universitarios</span>
           </p>
         </div>
       </div>
       <Carrousel />
     </section>
-    <section class="border border-green-400 h-[200px]">
-      hola
+    <section id="donde-estamos" class="h-screen flex flex-col">
+      <Divider name="Dónde Estamos"/>
+      <div class="flex-grow bg-red-400"> hola</div>
     </section>
     <section class="border border-blue-400 h-[200px]">
       hola

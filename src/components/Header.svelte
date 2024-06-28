@@ -3,10 +3,10 @@
     export let y;
     
     let tabs = [
+       {name: 'Dónde estamos', link:'#donde-estamos'},
        {name: 'Habitaciones', link: '#habitaciones'},
        {name: 'Servicios', link: '#servicios'},
        {name: 'Fotos', link: '#fotos'},
-       {name: 'Dónde estamos', link:'#donde-estamos'}
     ]
 
     let menu = false;
@@ -53,17 +53,17 @@
             y > 0 ? ' bg-orange-800 bg-opacity-60 ' : ' bg-orange-800 bg-opacity-95 '
           )}
         transition:slide>
-        <div class="flex flex-col items-start w-full px-10">
+        <div class="flex flex-col items-start w-full px-10" >
             {#each tabs as tab, index}
             <div class="w-full">
-                <a href={tab.link} class="px-4 duration-200 hover:opacity-40">
+                <a href={tab.link} class="px-4 duration-200 hover:opacity-40" on:click={() => { menu = !menu }}>
                     <p>{tab.name}</p>
                 </a>
                 <hr class="opacity-40"/>
             </div>
             {/each}
             <div class="w-full">
-                <a href="#contacto" class="px-4 duration-200 hover:opacity-40 text-amber-400">
+                <a href="#contacto" class="px-4 duration-200 hover:opacity-40 text-amber-400" on:click={() => { menu = !menu }}>
                     <p>Contactanos</p>
                 </a>
             </div>
