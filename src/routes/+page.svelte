@@ -28,7 +28,7 @@
       <Divider name="Dónde estamos" id="#donde-estamos" />
       <div class="flex flex-grow flex-col lg:flex-row px-5 lg:px-10">
         <div class="lg:w-1/3 lg:h-full h-1/3">
-          <div class="h-full flex items-center justify-center">
+          <div class="h-full flex items-center justify-center opacity-90">
             <p class="text-left lg:text-right text-white  text-sm sm:text-lg px-5 lg:pr-10 sm:leading-loose">
               <span class=" text-orange-400 font-semibold">DiqueUNO</span> está ubicada en Ensenada. 
               <br/>A 300 metros de las facultades de Humanidades y Psicología de la Universidad Nacional de La Plata.
@@ -49,14 +49,13 @@
       <Divider name="Habitaciones" id="#habitaciones" />
       <div class="flex flex-row overflow-hidden px-[5rem] flex-grow items-center justify-center">
         <Gallery class="gap-2 flex flex-row " items={images} imgClass="rounded-sm object-cover max-h-[30rem] w-full" />
-        <div class="flex flex-col justify-center items-center ">
-          <p class="text-left text-white text-base px-5">
+        <div class="flex flex-col justify-center items-center text-sm sm:text-lg sm:leading-loose opacity-90">
+          <p class="pl-10 text-justify text-white">
             Nuestras habitaciones son <span class=" text-orange-400 font-semibold">individuales</span> y todas cuentan con:
           </p>
           <ul class="pt-2 text-left">
             <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Ventilación a espacios exteriores</li>
             <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Calefacción eléctrica</li>
-            <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Ventilación a espacios exteriores</li>
             <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Cama</li>
             <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Placard</li>
             <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Mesa de estudio individual</li>
