@@ -1,13 +1,13 @@
 <script>
   import Carrousel from "../components/Carrousel.svelte";
   import Divider from "../components/Divider.svelte";
+
   import { Gallery } from 'flowbite-svelte';
 
   const images = [
     { alt: 'Habitación 1', src: '/images/habitaciones/1.jpg' },
     { alt: 'Pasillo', src: '/images/habitaciones/3.jpg' },
     { alt: 'Habitación 2', src: '/images/habitaciones/2.jpg' },
-    { alt: 'Habitación 3', src: '/images/habitaciones/4.jpg' },
   ];
 </script>
 
@@ -30,7 +30,7 @@
         <div class="lg:w-1/3 lg:h-full h-1/3">
           <div class="h-full flex items-center justify-center">
             <p class="text-left lg:text-right text-white  text-sm sm:text-lg px-5 lg:pr-10 sm:leading-loose">
-              <span class=" text-orange-600 font-semibold">DiqueUNO</span> está ubicada en Ensenada. 
+              <span class=" text-orange-400 font-semibold">DiqueUNO</span> está ubicada en Ensenada. 
               <br/>A 300 metros de las facultades de Humanidades y Psicología de la Universidad Nacional de La Plata.
               <br/>A su vez se encuentra a 15 minutos a pie del centro de la ciudad de La Plata.
             </p>
@@ -46,6 +46,25 @@
       </div>
     </section>
     <section id="habitaciones" class="h-screen flex flex-col bg-gray-800 bg-opacity-60">
+      <Divider name="Habitaciones" id="#habitaciones" />
+      <div class="flex flex-row overflow-hidden px-[5rem] flex-grow items-center justify-center">
+        <Gallery class="gap-2 flex flex-row " items={images} imgClass="rounded-sm object-cover max-h-[30rem] w-full" />
+        <div class="flex flex-col justify-center items-center ">
+          <p class="text-left text-white text-base px-5">
+            Nuestras habitaciones son <span class=" text-orange-400 font-semibold">individuales</span> y todas cuentan con:
+          </p>
+          <ul class="pt-2 text-left">
+            <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Ventilación a espacios exteriores</li>
+            <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Calefacción eléctrica</li>
+            <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Ventilación a espacios exteriores</li>
+            <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Cama</li>
+            <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Placard</li>
+            <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Mesa de estudio individual</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+<!--     <section id="habitaciones" class="h-screen flex flex-col bg-gray-800 bg-opacity-60">
       <Divider name="Habitaciones" id="#habitaciones" />
       <div class="flex flex-grow lg:flex-col px-5 lg:px-10 items-center">
         <div class="h-1/2 md:h-2/3 py-10">
@@ -66,7 +85,7 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="border border-yellow-400 h-[200px]" >
       hola
     </section>
