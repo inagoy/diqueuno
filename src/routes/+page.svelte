@@ -47,18 +47,20 @@
     </section>
     <section id="habitaciones" class="h-screen flex flex-col bg-gray-800 bg-opacity-60">
       <Divider name="Habitaciones" id="#habitaciones" />
-      <div class="flex flex-row overflow-hidden px-[5rem] flex-grow items-center justify-center">
-        <Gallery class="gap-2 flex flex-row " items={images} imgClass="rounded-sm object-cover max-h-[30rem] w-full" />
-        <div class="flex flex-col justify-center items-center text-sm sm:text-lg sm:leading-loose opacity-90">
-          <p class="pl-10 text-justify text-white">
-            Nuestras habitaciones son <span class=" text-orange-400 font-semibold">individuales</span> y todas cuentan con:
+      <div class="flex flex-row overflow-hidden px-[3rem] flex-grow items-center justify-center">
+        <div class="hidden lg:block">
+          <Gallery class="gap-2 flex flex-row" items={images} imgClass="rounded-sm object-cover max-h-[800px] w-full" />
+        </div>
+        <div class="flex flex-col justify-center items-center text-sm lg:text-base sm:leading-loose opacity-90  pl-5 ">
+          <p class="text-left text-white">
+            Nuestras habitaciones son <span class="text-orange-400 font-semibold">individuales</span> y todas cuentan con:
           </p>
-          <ul class="pt-2 text-left">
+          <ul class="pt-5 text-left">
             <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Ventilación a espacios exteriores</li>
             <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Calefacción eléctrica</li>
+            <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Mesa de estudio individual</li>
             <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Cama</li>
             <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Placard</li>
-            <li><i class="fa-solid fa-check pr-2 text-orange-400"></i>Mesa de estudio individual</li>
           </ul>
         </div>
       </div>
