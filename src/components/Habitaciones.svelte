@@ -8,16 +8,21 @@
         { alt: 'Habitación 2', src: '/images/habitaciones/2.jpg' },
     ];
 </script>
-<div class=" flex flex-row overflow-hidden px-[3rem] flex-grow items-center justify-center">
-  <div class="hidden flex-grow lg:block">
-    <Gallery class="gap-2 flex flex-row" items={images} imgClass="rounded-sm object-cover max-h-[800px] w-full" />
-  </div>
-  <div class="flex-1 place-content-center">
-      <Carousel {images} duration="5000" imgClass=" object-cover" class="rounded-none z-[1]" let:Indicators>
-          <Indicators class="z-[1]"/>
+
+<div class="flex flex-grow flex-row">
+  <div class="flex flex-grow lg:hidden items-center">
+    <div class="flex-1 flex-grow">
+      <Carousel {images} class="min-h-[500px] rounded-sm" imgClass="object-contain max-h-[800px] w-full" let:Controls>
+        <Controls class="z-[1]"/>
       </Carousel>
+    </div>
   </div>
-  <div class="flex flex-col justify-center items-center text-sm lg:text-base sm:leading-loose opacity-90  pl-5 ">
+  <div class="flex flex-grow hidden lg:flex items-center justify-center">
+    <div class="flex-1 flex-grow">
+      <Gallery class="gap-2 flex flex-row items-center" items={images} imgClass="rounded-sm object-cover max-h-[800px] w-full" />
+    </div>
+  </div>
+  <div class="w-1/3 flex flex-col justify-center items-center text-sm lg:text-base sm:leading-loose opacity-90 px-4">
     <p class="text-left text-white">
       Nuestras habitaciones son <span class="text-orange-400 font-semibold">individuales</span> y todas cuentan con:
     </p>
