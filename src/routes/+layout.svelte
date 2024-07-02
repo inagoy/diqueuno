@@ -2,7 +2,13 @@
     import "../app.css";
     import Footer from "../components/Footer.svelte";
     import Header from "../components/Header.svelte";
-
+    import { Carousel } from 'flowbite-svelte';
+    
+    const images = [
+        { alt: 'Habitación 1', src: '/images/habitaciones/1.jpg' },
+        { alt: 'Pasillo', src: '/images/habitaciones/3.jpg' },
+        { alt: 'Habitación 2', src: '/images/habitaciones/2.jpg' },
+    ];
     let y;
     let innerHeight = 0;
     let innerWidth = 0;
@@ -21,4 +27,5 @@
     <slot />
     <Footer />
 </div>
+
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth></svelte:window>

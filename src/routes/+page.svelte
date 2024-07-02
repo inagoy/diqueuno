@@ -20,7 +20,4 @@
       <Divider name="Habitaciones" id="#habitaciones" />
       <Habitaciones/>
     </section>
-    <section class="border border-yellow-400 h-[200px]" >
-      hola
-    </section>
 </main>
