@@ -8,15 +8,15 @@
 
 </script>
 
-<main class="flex flex-col ">
+<main class="flex flex-col">
     <section  id="introPage" class="relative flex-grow h-screen items-center justify-center">
       <Home />
     </section>
-    <section id="donde-estamos" class="h-screen flex flex-col bg-gray-800 bg-opacity-60">
+    <section id="donde-estamos" class="flex flex-col min-h-screen bg-gray-800 bg-opacity-60">
       <Divider name="Dónde estamos" id="#donde-estamos" />
       <Ubicacion/>
     </section>
-    <section id="habitaciones" class="h-screen flex flex-col bg-gray-800 bg-opacity-60">
+    <section id="habitaciones" class="flex flex-col min-h-screen bg-gray-800 bg-opacity-60">
       <Divider name="Habitaciones" id="#habitaciones" />
       <Habitaciones/>
     </section>
