@@ -1,16 +1,24 @@
 <script>
     import { Gallery, Modal } from 'flowbite-svelte';
 
-    const images = [
-        { alt: 'Habitación 1', src: '/images/habitaciones/1.jpg' },
-        { alt: 'Pasillo', src: '/images/habitaciones/3.jpg' },
-        { alt: 'Habitación 2', src: '/images/habitaciones/2.jpg' },
-        { alt: 'Barra', src: '/images/barra.jpg' },
+    const imagesA = [
+        { alt: 'Cocina', src: 'images/cocina2.jpg'},
         { alt: 'Fachada', src: '/images/fachada.jpg' },
-        { alt: 'Living', src: '/images/living.jpg' },
-        { alt: 'Comedor', src: '/images/comedor.jpg' },
-        { alt: 'Cocina', src: '/images/cocina.jpg' },
     ];
+    const imagesB = [
+        { alt: 'Living', src: '/images/living.jpg' },
+        { alt: 'Comedor', src: 'images/comedor2.jpg'},
+    ];
+    const imagesC = [
+        { alt: 'Patio', src: 'images/patio.jpg'},
+        { alt: 'Comedor', src: '/images/comedor.jpg' },
+    ];
+    const imagesD = [
+        { alt: 'Cocina', src: '/images/cocina.jpg' },
+        { alt: 'Barra', src: '/images/barra.jpg' },
+    ];
+
+    
 
     let currentImg;
     let showModal=false;
@@ -24,10 +32,29 @@
 </script>
 
 <div class="flex flex-grow md:px-10">
-    <Gallery class="gap-4 grid-cols-2 md:grid-cols-4" items={images} let:item>
-        <button on:click={showPicture(item.src)}>
-            <img src={item.src} alt={item.alt} class="h-auto max-w-full" />
-        </button>
+    <Gallery class="gap-4 grid-cols-2 md:grid-cols-4 py-5 " >
+        <Gallery items={imagesA} let:item>
+            <button on:click={showPicture(item.src, item.alt)} class=" hover:opacity-80">
+                <img src={item.src} alt={item.alt} class="object-cover h-full" />
+            </button>
+        </Gallery>
+        <Gallery items={imagesB} let:item>
+            <button on:click={showPicture(item.src, item.alt)} class=" hover:opacity-80">
+                <img src={item.src} alt={item.alt} class="object-cover h-full" />
+            </button>
+        </Gallery>
+        <Gallery items={imagesC} let:item>
+            <button on:click={showPicture(item.src, item.alt)} class=" hover:opacity-80">
+                <img src={item.src} alt={item.alt} class="object-cover h-full" />
+            </button>
+        </Gallery>
+        <Gallery items={imagesD} let:item>
+            <button on:click={showPicture(item.src, item.alt)} class=" hover:opacity-80">
+                <img src={item.src} alt={item.alt} class="object-cover h-full" />
+            </button>        
+        </Gallery>
+
+
     </Gallery>
 </div>
 <Modal 
@@ -41,5 +68,6 @@
 >
     <div class="object-cover">
         <img src={currentImg.src} alt={currentImg.alt} class="max-h-[500px]"/>
+        <h1 class="text-center pt-10 md:text-lg text-base">{currentImg.alt}</h1>
     </div>
 </Modal>
