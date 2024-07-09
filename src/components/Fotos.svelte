@@ -32,8 +32,8 @@
 </script>
 
 <div class="flex flex-grow md:px-10">
-    <Gallery class="gap-4 grid-cols-2 md:grid-cols-4 py-5 " >
-        <Gallery items={imagesA} let:item>
+    <Gallery class="gap-4 grid-cols-2 md:grid-cols-4 py-5">
+        <Gallery items={imagesA} let:item >
             <button on:click={showPicture(item.src, item.alt)} class=" hover:opacity-80">
                 <img src={item.src} alt={item.alt} class="object-cover h-full" />
             </button>

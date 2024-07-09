@@ -17,7 +17,7 @@
       </Carousel>
     </div>
   </div>
-  <div class="flex-grow hidden lg:flex items-center justify-center">
+  <div class="flex-grow hidden lg:flex items-center justify-center pl-10">
     <div class="flex-1 flex-grow">
       <Gallery class="gap-2 flex flex-row items-center" items={images} imgClass="rounded-sm object-cover max-h-[800px] w-full" />
     </div>
