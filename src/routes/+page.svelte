@@ -5,7 +5,7 @@
 	import Ubicacion from "../components/Ubicacion.svelte";
   import Habitaciones from "../components/Habitaciones.svelte";
   import Servicios from "../components/Servicios.svelte";
-
+  import Contacto from "../components/Contacto.svelte";
 </script>
 
 <main class="flex flex-col">
@@ -27,5 +27,9 @@
     <section id="fotos" class="flex flex-col min-h-screen bg-gray-800 bg-opacity-60">
       <Divider name="Fotos" id="#fotos" />
       <Fotos/>
+    </section>
+    <section id="contacto" class="flex flex-col min-h-screen bg-gray-800 bg-opacity-60">
+      <Divider name="Contacto" id="#contacto" />
+      <Contacto/>
     </section>
 </main>
