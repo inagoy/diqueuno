@@ -2,7 +2,6 @@
     import "../app.css";
     import Footer from "../components/Footer.svelte";
     import Header from "../components/Header.svelte";
-    import { Carousel } from 'flowbite-svelte';
     
     const images = [
         { alt: 'Habitación 1', src: '/images/habitaciones/1.jpg' },

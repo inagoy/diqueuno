@@ -21,7 +21,7 @@
 
     const formData = {
       access_key: "fe5e53de-0edb-4e11-b288-da98aa131352",
-      subject: "Mensaje de contacto de la web",
+      subject: "MENSAJE DE CONTACTO DE DIQUEUNO.COM",
       name,
       email,
       message
@@ -91,7 +91,7 @@
 
 <div class="flex items-center">
   <div class="flex-grow mx-auto">
-    <div class="max-w-xl mx-auto mt-10 bg-white bg-opacity-50 p-2 rounded-md shadow-lg">
+    <div class="max-w-xl mx-auto mt-10 bg-white bg-opacity-80 p-2 rounded-md shadow-lg">
       <div class="text-center">
         <h1 class="my-3 text-3xl font-semibold text-orange-800">Contactanos</h1>
         <p class="text-gray-800">Llená el formulario para enviarnos un mensaje con tu consulta.</p>

@@ -60,10 +60,11 @@
 <Modal 
     bind:open={showModal} 
     size='xl'
+    color='red'
     autoclose
     dialogClass='fixed top-0 start-0 end-0 h-modal md:inset-0 md:h-full z-50 w-full flex bg-black bg-opacity-70 '
     footerClass="bg-opacity-0"
-    bodyClass='flex-1 '
+    bodyClass='flex-1'
     class="bg-opacity-0 items-center justify-center rounded-sm"
 >
     <div class="object-cover">

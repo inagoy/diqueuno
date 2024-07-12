@@ -6,7 +6,7 @@
       <br/>A su vez se encuentra a 15 minutos a pie del centro de la ciudad de La Plata.
     </p>
   </div>
-  <div class="flex flex-grow bg-red-400">
+  <div class="flex flex-grow px-5">
     <iframe 
       title="Google Maps"
       src="https://www.google.com/maps/d/embed?mid=1qOKLeB2P5WkwqndK6VP-THtX1bFLJ1M&ehbc=2E312F"
