@@ -3,12 +3,12 @@
     let cards = [
         {
             name: 'Internet-TV',
-            text: 'Contamos con servicio de internet de alta velocidad, incluyendo que sea accesible desde todos los rincones de la residencia, incluyendo las habitaciones.',
+            text: 'Contamos con servicio de internet de alta velocidad, accesible desde todos los rincones de la residencia, incluyendo las habitaciones.',
             icon: 'fa-solid fa-wifi',
         },
         {
             name: 'Lavadero',
-            text: 'Contamos con servicio de lavandería de alta calidad, incluyendo que sea accesible desde todos los rincones de la residencia, incluyendo las habitaciones.',
+            text: 'Contamos con un lavadero disponible para ser utilizado por los residentes en cualquier momento.',
             icon: 'fa-solid fa-tint',
         },
         {
@@ -18,7 +18,7 @@
         },
         {
             name: 'Limpieza',
-            text: 'Contamos con un servicio de limpieza semanal para asistir en el mantenimiento de la limpieza.',
+            text: 'Contamos con un servicio de limpieza semanal para asistir en el mantenimiento de la higiene de los espacios comunes.',
             icon: 'fa-solid fa-trash',
         }
     ]
