@@ -12,7 +12,7 @@
 <div class="flex flex-grow sm:flex-row flex-col">
   <div class="flex flex-grow lg:hidden items-center">
     <div class="flex-1 flex-grow">
-      <Carousel {images} class="min-h-[500px] rounded-sm" imgClass="object-contain max-h-[900px] w-full" let:Controls>
+      <Carousel {images} class="min-h-[500px] rounded-sm" imgClass="object-contain max-h-[900px] w-full" let:Controls disableSwipe=true>
         <Controls class="z-[1]"/>
       </Carousel>
     </div>
