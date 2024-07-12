@@ -71,3 +71,9 @@
         <h1 class="text-center pt-10 md:text-lg text-base">{currentImg.alt}</h1>
     </div>
 </Modal>
+<div class="flex flex-grow md:px-10 items-center justify-center opacity-70 hover:opacity-100">
+    <a href="https://www.instagram.com/diqueuno/" target="_blank" class="flex items-center gap-2">
+        <h1> Mirá más fotos en nuestro instagram</h1>
+        <i class="fa-brands fa-instagram fa-3x "></i>
+    </a>
+</div>
